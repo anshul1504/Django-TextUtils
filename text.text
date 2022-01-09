@@ -1,0 +1,22 @@
+url
+    path('capitalizefirst', views.capfirst, name='capfirst'),
+    path('newlineremove', views.newlineremove, name='newlineremove'),
+    path('spaceremove', views.spaceremove, name='spaceremove'),
+    path('charcount', views.charcount, name='charcount')
+
+
+views
+
+    
+def capfirst(request):
+    return HttpResponse("capfirst")
+    
+def newlineremove(request):
+    return HttpResponse("newlineremove")
+    
+def spaceremove(request):
+    return HttpResponse("spaceremove")
+    
+def charcount(request):
+    return HttpResponse("charcount")
+    
